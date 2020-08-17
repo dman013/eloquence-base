@@ -1,6 +1,6 @@
 <?php
 
-namespace Sofa\Eloquence\Relations;
+namespace Dmn013\Eloquence\Relations;
 
 use LogicException;
 use Illuminate\Database\Query\Builder;
@@ -16,7 +16,7 @@ use Illuminate\Database\Eloquent\Relations\HasOneOrMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 use Illuminate\Database\Eloquent\Relations\MorphOneOrMany;
-use Sofa\Eloquence\Contracts\Relations\Joiner as JoinerContract;
+use Dmn013\Eloquence\Contracts\Relations\Joiner as JoinerContract;
 
 class Joiner implements JoinerContract
 {

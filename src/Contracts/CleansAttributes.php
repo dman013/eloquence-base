@@ -1,6 +1,6 @@
 <?php
 
-namespace Sofa\Eloquence\Contracts;
+namespace Dmn013\Eloquence\Contracts;
 
 interface CleansAttributes
 {

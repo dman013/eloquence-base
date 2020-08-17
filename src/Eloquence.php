@@ -1,12 +1,12 @@
 <?php
 
-namespace Sofa\Eloquence;
+namespace Dmn013\Eloquence;
 
 use Illuminate\Database\Connection;
-use Sofa\Hookable\Hookable;
-use Sofa\Hookable\Contracts\ArgumentBag;
-use Sofa\Eloquence\Query\Builder as QueryBuilder;
-use Sofa\Eloquence\AttributeCleaner\Observer as AttributeCleaner;
+use Dmn013\Hookable\Hookable;
+use Dmn013\Hookable\Contracts\ArgumentBag;
+use Dmn013\Eloquence\Query\Builder as QueryBuilder;
+use Dmn013\Eloquence\AttributeCleaner\Observer as AttributeCleaner;
 
 /**
  * This trait is an entry point for all the hooks that we want to apply
@@ -155,8 +155,8 @@ trait Eloquence
     /**
      * Create new Eloquence query builder for the instance.
      *
-     * @param  \Sofa\Eloquence\Query\Builder $query
-     * @return \Sofa\Eloquence\Builder
+     * @param  \Dmn013\Eloquence\Query\Builder $query
+     * @return \Dmn013\Eloquence\Builder
      */
     public function newEloquentBuilder($query)
     {
@@ -166,7 +166,7 @@ trait Eloquence
     /**
      * Get a new query builder instance for the connection.
      *
-     * @return \Sofa\Eloquence\Query\Builder
+     * @return \Dmn013\Eloquence\Query\Builder
      */
     protected function newBaseQueryBuilder()
     {

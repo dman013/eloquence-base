@@ -1,6 +1,6 @@
-# Sofa/Eloquence
+# Dmn013/Eloquence
 
-[![Build Status](https://travis-ci.org/jarektkaczyk/eloquence-base.svg)](https://travis-ci.org/jarektkaczyk/eloquence-base) [![Coverage Status](https://coveralls.io/repos/jarektkaczyk/eloquence-base/badge.svg)](https://coveralls.io/r/jarektkaczyk/eloquence-base) [![Code Quality](https://scrutinizer-ci.com/g/jarektkaczyk/eloquence-base/badges/quality-score.png)](https://scrutinizer-ci.com/g/jarektkaczyk/eloquence-base) [![Downloads](https://poser.pugx.org/sofa/eloquence-base/downloads)](https://packagist.org/packages/sofa/eloquence-base) [![stable](https://poser.pugx.org/sofa/eloquence-base/v/stable.svg)](https://packagist.org/packages/sofa/eloquence-base)
+[![Build Status](https://travis-ci.org/jarektkaczyk/eloquence-base.svg)](https://travis-ci.org/jarektkaczyk/eloquence-base) [![Coverage Status](https://coveralls.io/repos/jarektkaczyk/eloquence-base/badge.svg)](https://coveralls.io/r/jarektkaczyk/eloquence-base) [![Code Quality](https://scrutinizer-ci.com/g/jarektkaczyk/eloquence-base/badges/quality-score.png)](https://scrutinizer-ci.com/g/jarektkaczyk/eloquence-base) [![Downloads](https://poser.pugx.org/dmn013/eloquence-base/downloads)](https://packagist.org/packages/dmn013/eloquence-base) [![stable](https://poser.pugx.org/dmn013/eloquence-base/v/stable.svg)](https://packagist.org/packages/dmn013/eloquence-base)
 
 Easy and flexible extensions for the [Eloquent ORM](https://laravel.com/docs/eloquent).
 
@@ -16,10 +16,10 @@ Currently available extensions:
 ## Installation
 
 ```bash
-composer require sofa/eloquence-base
+composer require dmn013/eloquence-base
 ```
 
-**Check the [documentation](https://github.com/jarektkaczyk/eloquence/wiki) for installation and usage info, [website](http://softonsofa.com/tag/eloquence/) for examples and [API reference](http://jarektkaczyk.github.io/eloquence-api)**
+**Check the [documentation](https://github.com/jarektkaczyk/eloquence/wiki) for installation and usage info, [website](http://softondmn013.com/tag/eloquence/) for examples and [API reference](http://jarektkaczyk.github.io/eloquence-api)**
 
 ## Contribution
 

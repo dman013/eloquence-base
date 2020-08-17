@@ -1,6 +1,6 @@
 <?php
 
-namespace Sofa\Eloquence\Contracts;
+namespace Dmn013\Eloquence\Contracts;
 
 interface Attribute
 {
@@ -8,7 +8,7 @@ interface Attribute
      * Create new AttributeBag.
      *
      * @param  array  $models
-     * @return \Sofa\Eloquence\Metable\AttributeBag
+     * @return \Dmn013\Eloquence\Metable\AttributeBag
      */
     public function newCollection(array $models = []);
 
@@ -36,7 +36,7 @@ interface Attribute
      *
      * @param mixed $value
      *
-     * @throws \Sofa\Eloquence\Exceptions\InvalidTypeException
+     * @throws \Dmn013\Eloquence\Exceptions\InvalidTypeException
      */
     public function setValue($value);
 

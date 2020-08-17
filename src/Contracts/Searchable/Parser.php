@@ -1,6 +1,6 @@
 <?php
 
-namespace Sofa\Eloquence\Contracts\Searchable;
+namespace Dmn013\Eloquence\Contracts\Searchable;
 
 interface Parser
 {

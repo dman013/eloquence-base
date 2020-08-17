@@ -1,6 +1,6 @@
 <?php
 
-namespace Sofa\Eloquence\Searchable;
+namespace Dmn013\Eloquence\Searchable;
 
 use Illuminate\Database\Grammar;
 

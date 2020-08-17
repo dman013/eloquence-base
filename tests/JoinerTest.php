@@ -1,12 +1,12 @@
 <?php
 
-namespace Sofa\Eloquence\Tests;
+namespace Dmn013\Eloquence\Tests;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Query\Builder as Query;
 use Illuminate\Database\Query\Grammars\Grammar;
 use Illuminate\Database\Eloquent\Model;
-use Sofa\Eloquence\Relations\JoinerFactory;
+use Dmn013\Eloquence\Relations\JoinerFactory;
 
 use Mockery as m;
 
@@ -145,35 +145,35 @@ class JoinerUserStub extends Model {
 
     public function profile()
     {
-        return $this->belongsTo('Sofa\Eloquence\Tests\JoinerProfileStub', 'profile_id');
+        return $this->belongsTo('Dmn013\Eloquence\Tests\JoinerProfileStub', 'profile_id');
     }
 
     public function companies()
     {
-        return $this->belongsToMany('Sofa\Eloquence\Tests\JoinerCompanyStub', 'company_user', 'user_id', 'company_id');
+        return $this->belongsToMany('Dmn013\Eloquence\Tests\JoinerCompanyStub', 'company_user', 'user_id', 'company_id');
     }
 
     public function profiles()
     {
         // due to lack of getters on HasManyThrough this relation works only with default fk!
-        $related = 'Sofa\Eloquence\Tests\JoinerProfileStub';
-        $through = 'Sofa\Eloquence\Tests\JoinerCompanyStub';
+        $related = 'Dmn013\Eloquence\Tests\JoinerProfileStub';
+        $through = 'Dmn013\Eloquence\Tests\JoinerCompanyStub';
         return $this->hasManyThrough($related, $through, 'user_id', 'company_id');
     }
 
     public function posts()
     {
-        return $this->hasMany('Sofa\Eloquence\Tests\JoinerPostStub', 'user_id');
+        return $this->hasMany('Dmn013\Eloquence\Tests\JoinerPostStub', 'user_id');
     }
 
     public function softDeletingPosts()
     {
-        return $this->hasMany('Sofa\Eloquence\Tests\JoinerSoftDeletingStub', 'user_id');
+        return $this->hasMany('Dmn013\Eloquence\Tests\JoinerSoftDeletingStub', 'user_id');
     }
 
     public function morphed()
     {
-        return $this->morphOne('Sofa\Eloquence\Tests\MorphOneStub');
+        return $this->morphOne('Dmn013\Eloquence\Tests\MorphOneStub');
     }
 
     public function morphs()
@@ -187,12 +187,12 @@ class JoinerProfileStub extends Model {
 
     public function company()
     {
-        return $this->morphOne('Sofa\Eloquence\Tests\JoinerCompanyStub', 'morphable');
+        return $this->morphOne('Dmn013\Eloquence\Tests\JoinerCompanyStub', 'morphable');
     }
 
     public function tags()
     {
-      return $this->morphToMany('Sofa\Eloquence\Tests\JoinerTagStub', 'taggable');
+      return $this->morphToMany('Dmn013\Eloquence\Tests\JoinerTagStub', 'taggable');
     }
 }
 
@@ -211,7 +211,7 @@ class JoinerSoftDeletingStub extends Model {
 
     public function comments()
     {
-        return $this->hasMany('Sofa\Eloquence\Tests\JoinerCommentStub', 'post_id');
+        return $this->hasMany('Dmn013\Eloquence\Tests\JoinerCommentStub', 'post_id');
     }
 }
 
@@ -229,6 +229,6 @@ class JoinerTagStub extends Model
 
   public function profiles()
   {
-    return $this->morphedByMany('Sofa\Eloquence\Tests\JoinerProfileStub', 'taggable');
+    return $this->morphedByMany('Dmn013\Eloquence\Tests\JoinerProfileStub', 'taggable');
   }
 }

@@ -1,8 +1,8 @@
 <?php
 
 /**
- * @package Sofa\Eloquence
- * @author Jarek Tkaczyk <jare@softonsofa.com>
+ * @package Dmn013\Eloquence
+ * @author Jarek Tkaczyk <jare@softondmn013.com>
  */
 
 use Illuminate\Database\Eloquent\Model;

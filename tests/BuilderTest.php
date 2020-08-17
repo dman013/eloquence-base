@@ -1,10 +1,10 @@
 <?php
 
-namespace Sofa\Eloquence\Tests;
+namespace Dmn013\Eloquence\Tests;
 
-use Sofa\Eloquence\Builder;
-use Sofa\Eloquence\Eloquence;
-use Sofa\Eloquence\Mappable;
+use Dmn013\Eloquence\Builder;
+use Dmn013\Eloquence\Eloquence;
+use Dmn013\Eloquence\Mappable;
 
 use Illuminate\Database\Query\Builder as Query;
 use Illuminate\Database\Eloquent\Model;
@@ -76,11 +76,11 @@ class BuilderTest extends \PHPUnit_Framework_TestCase {
         $joiner = m::mock('stdClass');
         $joiner->shouldReceive('join')->with('foo', m::any());
         $joiner->shouldReceive('join')->with('bar', m::any());
-        $factory = m::mock('\Sofa\Eloquence\Relations\JoinerFactory');
+        $factory = m::mock('\Dmn013\Eloquence\Relations\JoinerFactory');
         $factory->shouldReceive('make')->andReturn($joiner);
         Builder::setJoinerFactory($factory);
 
-        Builder::setParserFactory(new \Sofa\Eloquence\Searchable\ParserFactory);
+        Builder::setParserFactory(new \Dmn013\Eloquence\Searchable\ParserFactory);
 
         $model = new BuilderModelStub;
         $builder->setModel($model);

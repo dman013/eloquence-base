@@ -1,6 +1,6 @@
 <?php
 
-namespace Sofa\Eloquence;
+namespace Dmn013\Eloquence;
 
 use Illuminate\Database\Query\Expression;
 use Illuminate\Database\Query\Builder as QueryBuilder;

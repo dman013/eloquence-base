@@ -1,17 +1,17 @@
 <?php
 
-namespace Sofa\Eloquence\Tests;
+namespace Dmn013\Eloquence\Tests;
 
 use Illuminate\Database\Query\Builder as Query;
 use Illuminate\Database\Query\Grammars\Grammar;
 use Illuminate\Database\Query\Expression;
 use Illuminate\Database\Eloquent\Model;
 
-use Sofa\Eloquence\Searchable\ParserFactory;
-use Sofa\Eloquence\Relations\JoinerFactory;
-use Sofa\Eloquence\ArgumentBag;
-use Sofa\Eloquence\Eloquence;
-use Sofa\Eloquence\Builder;
+use Dmn013\Eloquence\Searchable\ParserFactory;
+use Dmn013\Eloquence\Relations\JoinerFactory;
+use Dmn013\Eloquence\ArgumentBag;
+use Dmn013\Eloquence\Eloquence;
+use Dmn013\Eloquence\Builder;
 
 use Mockery as m;
 
@@ -259,13 +259,13 @@ class SearchableBuilderTest extends \PHPUnit_Framework_TestCase {
 
         $bindings = [
             // select
-            'jarek', 'tkaczyk', 'sofa', 'jarek%', 'tkaczyk%', '%jarek%',
-            'jarek', 'tkaczyk', 'sofa', 'jarek%', 'tkaczyk%', '%jarek%',
+            'jarek', 'tkaczyk', 'dmn013', 'jarek%', 'tkaczyk%', '%jarek%',
+            'jarek', 'tkaczyk', 'dmn013', 'jarek%', 'tkaczyk%', '%jarek%',
             // where
-            '%jarek%', 'tkaczyk%', 'sofa', '%jarek%', 'tkaczyk%', 'sofa',
+            '%jarek%', 'tkaczyk%', 'dmn013', '%jarek%', 'tkaczyk%', 'dmn013',
         ];
 
-        $query = $this->getModel()->search('*jarek* tkaczyk* sofa', ['last_name' => 10, 'companies.name' => 5], false);
+        $query = $this->getModel()->search('*jarek* tkaczyk* dmn013', ['last_name' => 10, 'companies.name' => 5], false);
 
         $this->assertEquals($sql, $query->toSql());
         $this->assertEquals($bindings, $query->getBindings());
@@ -365,12 +365,12 @@ class SearchableBuilderUserStub extends Model {
 
     public function profile()
     {
-        return $this->belongsTo('Sofa\Eloquence\Tests\SearchableProfileStub', 'profile_id');
+        return $this->belongsTo('Dmn013\Eloquence\Tests\SearchableProfileStub', 'profile_id');
     }
 
     public function companies()
     {
-        return $this->belongsToMany('Sofa\Eloquence\Tests\SearchableCompanyStub', 'company_user', 'user_id', 'company_id');
+        return $this->belongsToMany('Dmn013\Eloquence\Tests\SearchableCompanyStub', 'company_user', 'user_id', 'company_id');
     }
 }
 

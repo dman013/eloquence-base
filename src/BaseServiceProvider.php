@@ -1,10 +1,10 @@
 <?php
 
-namespace Sofa\Eloquence;
+namespace Dmn013\Eloquence;
 
-use Sofa\Eloquence\Builder;
-use Sofa\Eloquence\Relations\JoinerFactory;
-use Sofa\Eloquence\Searchable\ParserFactory;
+use Dmn013\Eloquence\Builder;
+use Dmn013\Eloquence\Relations\JoinerFactory;
+use Dmn013\Eloquence\Searchable\ParserFactory;
 use Illuminate\Support\ServiceProvider as BaseProvider;
 
 /**
@@ -41,7 +41,7 @@ class BaseServiceProvider extends BaseProvider
             return new JoinerFactory;
         });
 
-        $this->app->alias('eloquence.joiner', 'Sofa\Eloquence\Contracts\Relations\JoinerFactory');
+        $this->app->alias('eloquence.joiner', 'Dmn013\Eloquence\Contracts\Relations\JoinerFactory');
     }
 
     /**
@@ -55,7 +55,7 @@ class BaseServiceProvider extends BaseProvider
             return new ParserFactory;
         });
 
-        $this->app->alias('eloquence.parser', 'Sofa\Eloquence\Contracts\Relations\ParserFactory');
+        $this->app->alias('eloquence.parser', 'Dmn013\Eloquence\Contracts\Relations\ParserFactory');
     }
 
     /**

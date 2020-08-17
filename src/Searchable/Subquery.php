@@ -1,8 +1,8 @@
 <?php
 
-namespace Sofa\Eloquence\Searchable;
+namespace Dmn013\Eloquence\Searchable;
 
-use Sofa\Eloquence\Subquery as BaseSubquery;
+use Dmn013\Eloquence\Subquery as BaseSubquery;
 
 class Subquery extends BaseSubquery
 {

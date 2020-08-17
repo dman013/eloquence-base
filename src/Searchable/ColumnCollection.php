@@ -1,6 +1,6 @@
 <?php
 
-namespace Sofa\Eloquence\Searchable;
+namespace Dmn013\Eloquence\Searchable;
 
 use ArrayAccess;
 use ArrayIterator;
@@ -36,7 +36,7 @@ class ColumnCollection implements ArrayAccess, IteratorAggregate
     /**
      * Add column to the collection.
      *
-     * @param \Sofa\Eloquence\Searchable\Column $column
+     * @param \Dmn013\Eloquence\Searchable\Column $column
      */
     public function add(Column $column)
     {
@@ -110,7 +110,7 @@ class ColumnCollection implements ArrayAccess, IteratorAggregate
      * Get element at given offset.
      *
      * @param  string $key
-     * @return \Sofa\Eloquence\Searchable\Column
+     * @return \Dmn013\Eloquence\Searchable\Column
      */
     public function offsetGet($key)
     {
@@ -121,7 +121,7 @@ class ColumnCollection implements ArrayAccess, IteratorAggregate
      * Set element at given offset.
      *
      * @param  string $key    [description]
-     * @param  \Sofa\Eloquence\Searchable\Column $column
+     * @param  \Dmn013\Eloquence\Searchable\Column $column
      * @return void
      */
     public function offsetSet($key, $column)
@@ -133,7 +133,7 @@ class ColumnCollection implements ArrayAccess, IteratorAggregate
      * Unset element at given offset.
      *
      * @param  string $key
-     * @return \Sofa\Eloquence\Searchable\Column
+     * @return \Dmn013\Eloquence\Searchable\Column
      */
     public function offsetUnset($key)
     {

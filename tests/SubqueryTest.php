@@ -1,8 +1,8 @@
 <?php
 
-namespace Sofa\Eloquence\Tests;
+namespace Dmn013\Eloquence\Tests;
 
-use Sofa\Eloquence\Subquery;
+use Dmn013\Eloquence\Subquery;
 
 use Mockery as m;
 
