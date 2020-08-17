@@ -5,7 +5,7 @@ namespace Dmn013\Eloquence;
 use Illuminate\Support\Str;
 use Dmn013\Eloquence\Searchable\Column;
 use Illuminate\Database\Query\Expression;
-use Dmn013\Hookable\Builder as HookableBuilder;
+use Sofa\Hookable\Builder as HookableBuilder;
 use Dmn013\Eloquence\Searchable\ColumnCollection;
 use Dmn013\Eloquence\Contracts\Relations\JoinerFactory;
 use Dmn013\Eloquence\Contracts\Searchable\ParserFactory;

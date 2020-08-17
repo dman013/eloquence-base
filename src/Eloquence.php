@@ -3,8 +3,8 @@
 namespace Dmn013\Eloquence;
 
 use Illuminate\Database\Connection;
-use Dmn013\Hookable\Hookable;
-use Dmn013\Hookable\Contracts\ArgumentBag;
+use Sofa\Hookable\Hookable;
+use Sofa\Hookable\Contracts\ArgumentBag;
 use Dmn013\Eloquence\Query\Builder as QueryBuilder;
 use Dmn013\Eloquence\AttributeCleaner\Observer as AttributeCleaner;
 
